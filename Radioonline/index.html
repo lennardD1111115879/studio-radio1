@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="OIG2.jpg">
+    <link rel="stylesheet" href="style.css">
+    <title>Online Radio</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Willkommen beim Online Radio</h1>
+        <p>Hören Sie Ihren Lieblingssender</p>
+        <div class="player">
+       
+            <audio id="radioPlayer">
+               <source src="https://stream.studio-link.de/studioradiohh" type="audio/mpeg">
+                Ihr Browser unterstützt das Audio-Element nicht.
+            </audio>
+            <script class="podigee-podcast-player" src="https://stream.studio-link.de/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="https://stream.studio-link.de/config/studioradiohh"></script
+        </div>
+    </div>
+
+    <script>
+        const radioPlayer = document.getElementById('radioPlayer');
+
+        function playRadio() {
+            radioPlayer.play();
+        }
+
+        function pauseRadio() {
+            radioPlayer.pause();
+        }
+    </script>
+</body>
+</html>
